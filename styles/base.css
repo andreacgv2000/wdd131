@@ -1,25 +1,19 @@
 
-.bitcount-grid-double-<uniquifier> {
-  font-family: "Bitcount Grid Double", system-ui;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0;
-}
-
+/* ===============================
+   VARIABLES GLOBALES
+=============================== */
 :root {
-  --primary-color: #f4f1dd; /* naranja */
-  --secondary-color: #2a698b; /* celeste */
-  --accent1-color: #4c4339; /* sand */
-  --accent2-color: #0b1135; /* blue black */
+  --primary-color: #f4f1dd;     /* fondo */
+  --secondary-color: #2a698b;   /* header/nav */
+  --accent1-color: #4c4339;     /* enlaces */
+  --accent2-color: #0b1135;     /* texto principal/footer */
   --heading-font: "Bitcount Grid Double", system-ui;
   --body-font: "Roboto", sans-serif;
 }
 
+/* ===============================
+   ESTILOS GENERALES
+=============================== */
 body {
   font-family: var(--body-font);
   line-height: 1.6;
@@ -32,57 +26,103 @@ body {
 h1, h2, h3 {
   font-family: var(--heading-font);
   color: var(--secondary-color);
+  margin: 0.5rem 0;
 }
 
 a {
   color: var(--accent1-color);
   text-decoration: none;
-}   
-
+}
 
 a:hover {
   text-decoration: underline;
 }
 
+/* ===============================
+   HEADER
+=============================== */
 header {
   background-color: var(--secondary-color);
   color: white;
   padding: 1rem;
   text-align: center;
-  
 }
 
+header span#course-title {
+  display: block;       /* permite centrar y ajustar tamaño */
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* ===============================
+   NAVEGACIÓN FLEX
+=============================== */
 nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around; /* enlaces distribuidos horizontalmente */
   padding: 0;
+  margin: 0;
 }
+
 nav ul li {
   list-style: none;
-  margin: 0 15px;
 }
+
 nav ul li a {
   color: white;
   font-weight: bold;
+  padding: 0.5rem 1rem;
 }
+
 nav ul li a:hover {
   text-decoration: underline;
-}   
+}
 
+/* ===============================
+   MAIN
+=============================== */
 main {
   padding: 1rem;
+  max-width: 960px;      /* ancho máximo */
+  margin: 0 auto;        /* centra contenido */
 }
+
+/* ===============================
+   TARJETAS (GRID)
+=============================== */
+section.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
 footer {
   background-color: var(--accent2-color);
   color: white;
   text-align: center;
   padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-top: 2rem;
 }
-head.title {
-  font-size: 1.5rem;
-  margin: 0;
-  text-align: center;
+
+/* ===============================
+   TIPOGRAFÍA ESPECIAL (Bitcount Grid Double)
+=============================== */
+.bitcount-grid-double-<uniquifier> {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
 }
