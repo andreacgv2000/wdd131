@@ -115,7 +115,7 @@ footer {
 /* ===============================
    TIPOGRAFÍA ESPECIAL (Bitcount Grid Double)
 =============================== */
-.bitcount-grid-double-<uniquifier> {
+.bitcount-grid-double {
   font-family: "Bitcount Grid Double", system-ui;
   font-optical-sizing: auto;
   font-weight: <weight>;
