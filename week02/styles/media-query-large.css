@@ -1,0 +1,12 @@
+/* week02/media-query-large.css */
+
+@media screen and (min-width: 500px) {
+  header {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
