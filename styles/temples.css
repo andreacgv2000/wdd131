@@ -50,3 +50,9 @@ a:focus,button:focus{outline:3px solid rgba(52,103,161,0.2);outline-offset:2px}
 
 /* Small utility */
 .hidden{display:none}
+
+.main-nav a:hover {
+  color: #3467a1; /* cambio de color */
+  background: rgba(52, 103, 161, 0.1); /* ligero fondo para resaltar */
+  border-radius: 6px; /* bordes redondeados */
+}
