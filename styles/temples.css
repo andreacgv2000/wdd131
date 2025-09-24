@@ -1,0 +1,51 @@
+/* File: styles/temples.css (mobile-first) */
+body{
+margin:0;
+font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+background:var(--bg);
+color:#2259e6;
+-webkit-font-smoothing:antialiased;
+}
+.header-inner{
+max-width:var(--max-width);
+margin:0 auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0.75rem 1rem;
+}
+.site-header{background:var(--card);box-shadow:0 1px 2px rgba(0,0,0,0.05)}
+.brand{margin:0;font-family:'Playfair Display',serif;font-weight:700}
+.hamburger{
+font-size:1.4rem;
+background:none;border:0;padding:0.25rem 0.5rem;cursor:pointer;
+display:inline-flex;align-items:center;justify-content:center;
+}
+.main-nav{
+position:fixed; /* mobile: overlay */
+top:56px;right:0;left:0;
+background:var(--card);
+display:none;
+flex-direction:column;
+gap:0.25rem;
+padding:1rem;
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+z-index:40;
+}
+.main-nav a{display:block;padding:0.5rem 0;color:var(--accent);text-decoration:none;font-weight:600}
+.main-nav.open{display:flex}
+.container{max-width:var(--max-width);margin:1rem auto;padding:0 1rem}
+h1{font-family:'Playfair Display',serif;margin-top:0}
+.gallery{display:grid;grid-template-columns:1fr;gap:var(--gap)}
+figure{background:var(--card);padding:0.5rem;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;align-items:center}
+figure img{width:100%;height:auto;display:block;border-radius:6px}
+figcaption{padding-top:0.5rem;color:var(--muted);font-size:0.95rem}
+.site-footer{max-width:var(--max-width);margin:2rem auto;padding:1rem;text-align:center;color:var(--muted)}
+
+
+/* Accessibility: focus styles */
+a:focus,button:focus{outline:3px solid rgba(52,103,161,0.2);outline-offset:2px}
+
+
+/* Small utility */
+.hidden{display:none}

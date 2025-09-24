@@ -1,0 +1,10 @@
+/* File: styles/temples-large.css (overrides for larger screens) */
+@media (min-width:800px){
+.hamburger{display:none}
+.main-nav{position:static;display:flex;flex-direction:row;gap:1rem;background:transparent;padding:0;box-shadow:none}
+.header-inner{padding:1rem}
+.main-nav a{color:var(--accent)}
+.gallery{grid-template-columns:repeat(3,1fr);gap:1.25rem}
+figure{align-items:flex-start}
+figure img{border-radius:10px}
+}
