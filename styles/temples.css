@@ -25,6 +25,7 @@ display:inline-flex;align-items:center;justify-content:center;
 position:fixed; /* mobile: overlay */
 top:56px;right:0;left:0;
 background:#d374cb;
+bottom:0;    
 display:none;
 flex-direction:column;
 gap:0.25rem;
