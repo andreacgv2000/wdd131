@@ -1,104 +1,105 @@
 <!-- File: temples.html -->
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Temple Photo Album</title>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-<!-- Mobile-first CSS -->
-<link rel="stylesheet" href="styles/temples.css">
-<!-- Larger view overrides -->
-<link rel="stylesheet" href="styles/temples-large.css">
-<meta name="description" content="Responsive temple photo album page for WDD131 assignment">
-<script defer src="scripts/temples.js"></script>
-</head>
-<body>
-<header class="site-header">
-<div class="header-inner">
-<h2 class="brand">Temple Album</h2>
-<button id="hamburger" class="hamburger" aria-label="Open navigation" aria-expanded="false">☰</button>
-<nav id="main-nav" class="main-nav" aria-label="Primary">
-<a href="#">Home</a>
-<a href="#">Old</a>
-<a href="#">New</a>
-<a href="#">Large</a>
-<a href="#">Small</a>
-</nav>
-</div>
-</header>
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+         <meta name="author" content="Andrea Carolina Garcia">
+        <title>Temple Photo Album</title>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <!-- Mobile-first CSS -->
+        <link rel="stylesheet" href="styles/temples.css">
+        <!-- Larger view overrides -->
+        <link rel="stylesheet" href="styles/temples-large.css">
+        <meta name="description" content="Responsive temple photo album page for WDD131 assignment">
+        <script defer src="scripts/temples.js"></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-inner">
+            <h1 class="brand">Temple Album</h1>
+            <button id="hamburger" class="hamburger" aria-label="Open navigation" aria-expanded="false">☰</button>
+            <nav id="main-nav" class="main-nav" aria-label="Primary">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+            </nav>
+            </div>
+        </header>
 
 
-<main class="container">
-<h1>Temple Photo Album</h1>
+        <main class="container">
+        <h1>Temple Photo Album</h1>
 
 
-<section class="gallery" aria-label="Temple Images">
-<!-- Replace src with your own images in images/ folder -->
-<figure>
-<img src="images/temple1.png" alt="Temple 1" loading="lazy">
-<figcaption>Salt Lake Temple</figcaption>
-</figure>
+        <section class="gallery" aria-label="Temple Images">
+        <!-- Replace src with your own images in images/ folder -->
+        <figure>
+        <img src="images/temple1.png" alt="Temple 1" loading="lazy">
+        <figcaption>Salt Lake Temple</figcaption>
+        </figure>
 
 
-<figure>
-<img src="images/temple2.jpg" alt="Temple 2" loading="lazy">
-<figcaption>Laie Hawaii Temple</figcaption>
-</figure>
+        <figure>
+        <img src="images/temple2.jpg" alt="Temple 2" loading="lazy">
+        <figcaption>Laie Hawaii Temple</figcaption>
+        </figure>
 
 
-<figure>
-<img src="images/temple3.jpg" alt="Temple 3" loading="lazy">
-<figcaption>Cardston Alberta Temple</figcaption>
-</figure>
+        <figure>
+        <img src="images/temple3.jpg" alt="Temple 3" loading="lazy">
+        <figcaption>Cardston Alberta Temple</figcaption>
+        </figure>
 
 
-<figure>
-<img src="images/temple4.jpg" alt="Temple 4" loading="lazy">
-<figcaption>Rome Italy Temple</figcaption>
-</figure>
+        <figure>
+        <img src="images/temple4.jpg" alt="Temple 4" loading="lazy">
+        <figcaption>Rome Italy Temple</figcaption>
+        </figure>
 
 
-<figure>
-<img src="images/temple5.jpg" alt="Temple 5" loading="lazy">
-<figcaption>Manila Philippines Temple</figcaption>
-</figure>
+        <figure>
+        <img src="images/temple5.jpg" alt="Temple 5" loading="lazy">
+        <figcaption>Manila Philippines Temple</figcaption>
+        </figure>
 
 
-<figure>
-<img src="images/temple6.jpg" alt="Temple 6" loading="lazy">
-<figcaption>Tokyo Japan Temple</figcaption>
-</figure>
+        <figure>
+        <img src="images/temple6.jpg" alt="Temple 6" loading="lazy">
+        <figcaption>Tokyo Japan Temple</figcaption>
+        </figure>
 
 
-<figure>
-<img src="images/temple7.jpg" alt="Temple 7" loading="lazy">
-<figcaption>Sao Paulo Brazil Temple</figcaption>
-</figure>
+        <figure>
+        <img src="images/temple7.jpg" alt="Temple 7" loading="lazy">
+        <figcaption>Sao Paulo Brazil Temple</figcaption>
+        </figure>
 
 
-<figure>
-<img src="images/temple8.jpg" alt="Temple 8" loading="lazy">
-<figcaption>London England Temple</figcaption>
-</figure>
+        <figure>
+        <img src="images/temple8.jpg" alt="Temple 8" loading="lazy">
+        <figcaption>London England Temple</figcaption>
+        </figure>
 
 
 
-<figure>
-<img src="images/temple9.jpg" alt="Temple 9" loading="lazy">
-<figcaption>Mexico City Temple</figcaption>
-</figure>
-</section>
+        <figure>
+        <img src="images/temple9.jpg" alt="Temple 9" loading="lazy">
+        <figcaption>Mexico City Temple</figcaption>
+        </figure>
+        </section>
 
 
-</main>
+        </main>
 
 
-<footer class="site-footer">
-<p>&copy; <span id="copyright-year"></span> Temple Album.</p>
-<p>Last modified: <span id="last-modified"></span></p>
-</footer>
-</body>
+        <footer class="site-footer">
+        <p>&copy; <span id="copyright-year"></span> Temple Album.</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+        </footer>
+    </body>
 </html>
 

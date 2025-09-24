@@ -3,7 +3,7 @@ body{
 margin:0;
 font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
 background:var(--bg);
-color:#2259e6;
+color:#111;
 -webkit-font-smoothing:antialiased;
 }
 .header-inner{
@@ -24,7 +24,7 @@ display:inline-flex;align-items:center;justify-content:center;
 .main-nav{
 position:fixed; /* mobile: overlay */
 top:56px;right:0;left:0;
-background:var(--card);
+background:#d374cb;
 display:none;
 flex-direction:column;
 gap:0.25rem;
