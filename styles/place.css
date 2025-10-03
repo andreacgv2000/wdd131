@@ -2,14 +2,16 @@
   --primary-color: #006d77;
   --secondary-color: #83c5be;
   --text-color: #023047;
-  --bg-color: #edf6f9;
+  --bg-color: #eeeed0;
   --footer-bg: #006d77;
   --footer-text: #ffffff;
 }
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
