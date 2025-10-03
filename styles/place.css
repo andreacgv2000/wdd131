@@ -1,0 +1,60 @@
+:root {
+  --primary-color: #006d77;
+  --secondary-color: #83c5be;
+  --text-color: #023047;
+  --bg-color: #edf6f9;
+  --footer-bg: #006d77;
+  --footer-text: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sections */
+.about, .weather {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Weather icon only on MOBILE */
+.weather-icon {
+  width: 60px;
+  display: block;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Pseudo-element emoticon (DESKTOP only) */
+@media (min-width: 800px) {
+  .weather h2::after {
+    content: " ⛅";
+    margin-left: 0.5rem;
+  }
+
+  /* Hide SVG icon on wide view */
+  .weather-icon {
+    display: none;
+  }
+}
+
+

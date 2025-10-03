@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guatemala Country Page</title>
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <!-- HERO IMAGE -->
+  <header class="hero">
+    <picture>
+      <source srcset="images/gt-large.jpg" media="(min-width: 800px)">
+      <img src="images/gt-small.jpg" alt="Beautiful view of Guatemala landscape">
+    </picture>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="about">
+      <h1>Welcome to Guatemala</h1>
+      <p>
+        Guatemala is known as the “Land of Eternal Spring,” full of vibrant culture,
+        stunning landscapes, and rich history. From Lake Atitlán to Tikal’s Mayan ruins,
+        the country offers unforgettable experiences.
+      </p>
+    </section>
+
+    <!-- WEATHER SECTION -->
+    <section class="weather">
+      <h2>Weather</h2>
+      <!-- SVG icon for MOBILE view -->
+      <img src="images/sun.svg" alt="Sunny weather icon" class="weather-icon">
+
+      <p>Temperature: <span id="temp">8</span> °C</p>
+      <p>Wind Speed: <span id="windSpeed">12</span> km/h</p>
+      <p>Wind Chill: <span id="windChill">?</span></p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; <span id="year"></span> | Guatemala Country Page</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
