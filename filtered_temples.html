@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="author" content="Andrea Carolina Garcia">
+    <title>Temple Photo Album</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Mobile-first CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <!-- Larger view overrides -->
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <meta name="description" content="Responsive temple photo album page for WDD131 assignment">
+    <script defer src="scripts/temples.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <h1>Temple</h1>
+            <button id="hamburger" class="hamburger" aria-label="Open navigation" aria-expanded="false">☰</button>
+            <nav id="main-nav" class="main-nav" aria-label="Primary">
+                <a href="#" data-filter="Home">Home</a>
+                <a href="#" data-filter="Old">Old</a>
+                <a href="#" data-filter="New">New</a>
+                <a href="#" data-filter="Large">Large</a>
+                <a href="#" data-filter="Small">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Beautiful Temples Around the World</h2>
+        <p>This is a collection of beautiful temples from around the world. Temples are places of worship and reflection.</p>
+
+        <section class="gallery" id="templeCards" aria-label="Temple Images">
+            <!-- Los templos se generarán dinámicamente desde JavaScript -->
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="copyright-year"></span> Temple Album.</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

@@ -4,8 +4,8 @@
     {
       "type": "msedge",
       "request": "launch",
-      "name": "Launch Edge against place.html",
-      "file": "c:\\Users\\andre\\OneDrive\\Documentos\\pathway\\wdd131\\place.html"
+      "name": "Launch Edge against place_din.html",
+      "file": "c:\\Users\\andre\\OneDrive\\Documentos\\pathway\\wdd131\\temples_din.html"
     }
   ]
 }
