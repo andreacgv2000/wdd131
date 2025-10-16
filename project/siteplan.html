@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guatemala Peaks Adventure</title>
+  <meta name="description" content="Guides, trails, and safety tips for mountaineering in Guatemala." />
+  <link rel="stylesheet" href="styles/siteplan.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Guatemala Peaks Adventure</a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul id="primary-menu">
+          <li><a href="siteplan.html">Home</a></li>
+          <li><a href="trails.html">Trails</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+
+        <img src="images/volcan.jpg" alt="Guatemalan mountains and hikers" loading="lazy">
+      </picture>
+      <div class="hero-text">
+        <h1>Explore Guatemala's Peaks</h1>
+        <p class="hero-sub">Guides, routes, and safety tips for every level.</p>
+      </div>
+    </section>
+
+    <section id="featured" class="container featured">
+      <h2>Featured Trails</h2>
+      <div class="cards" id="featuredCards">
+        <!-- JS will populate cards dynamically or you can leave static cards here -->
+        <article class="card" data-id="pacaya" data-name="Volcano Pacaya" data-difficulty="Moderate">
+          <picture>
+            <img src="images/pacaya.jpg" alt="Volcano Pacaya" loading="lazy">
+          </picture>
+          <h3>Volcano Pacaya</h3>
+          <p>Short climb with lava views — popular with beginners and intermediates.</p>
+          <div class="card-actions">
+            <button class="save-btn" data-id="pacaya" data-name="Volcano Pacaya" data-difficulty="Moderate">Save Trail</button>
+          </div>
+        </article>
+
+        <article class="card" data-id="atitlan" data-name="Laguna Atitlán Hike" data-difficulty="Moderate">
+          <picture>
+            <img src="images/atitlan.webp" alt="Laguna Atitlán" loading="lazy">
+          </picture>
+          <h3>Laguna Atitlán Hike</h3>
+          <p>Scenic ridgelines and lake viewpoints.</p>
+          <div class="card-actions">
+            <button class="save-btn" data-id="atitlan" data-name="Laguna Atitlán Hike" data-difficulty="Moderate">Save Trail</button>
+          </div>
+        </article>
+      </div>
+
+      <section id="saved" class="saved container">
+        <h2>Your Saved Trails</h2>
+        <div id="savedTrails"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Guatemala Peaks Adventure. All rights reserved.</p>
+      <p><a href="references.html">References & Sources</a></p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

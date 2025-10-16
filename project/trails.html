@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trails — Guatemala Peaks Adventure</title>
+  <meta name="description" content="Detailed trail guides for mountaineering in Guatemala." />
+  <link rel="stylesheet" href="styles/siteplan.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="siteplan.html">Guatemala Peaks Adventure</a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul id="primary-menu">
+          <li><a href="siteplan.html">Home</a></li>
+          <li><a href="trails.html">Trails</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Trail Guides</h1>
+
+    <article class="trail-detail">
+      <h2>Volcano Pacaya</h2>
+      <picture>
+        <img src="images/pacaya.jpg" alt="Volcano Pacaya" loading="lazy" width="400" height="250">
+      </picture>
+      <p><strong>Difficulty:</strong> Moderate</p>
+      <p>Pacaya is accessible from Antigua and offers a dramatic volcanic landscape. Recommended to go with an experienced guide and proper shoes.</p>
+      <p><button class="save-btn" data-id="pacaya" data-name="Volcano Pacaya" data-difficulty="Moderate">Save Trail</button></p>
+    </article>
+
+    <article class="trail-detail">
+      <h2>Laguna Atitlán Hike</h2>
+      <picture>
+        
+        <img src="images/atitlan.webp" alt="Laguna Atitlán" loading="lazy">
+      </picture>
+      <p><strong>Difficulty:</strong> Moderate</p>
+      <p>Beautiful viewpoints over the lake and surrounding volcanoes; best visited during dry season.</p>
+      <p><button class="save-btn" data-id="atitlan" data-name="Laguna Atitlán Hike" data-difficulty="Moderate">Save Trail</button></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Guatemala Peaks Adventure.</p>
+      <p><a href="references.html">References & Sources</a></p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
